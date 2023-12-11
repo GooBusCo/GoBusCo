@@ -156,6 +156,49 @@
     </div>
 
     <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <center>
+                <h4>Informacion del chofer</h4>
+                <img src="{{asset('imagenes/chofer.png')}}" class="reponsive-img" style="max-height: 100px;"> <br>
+                <h6>{{$chofer->nombre}}</h6>
+                <span style="color: #2e7d32;">{{$chofer->email}}</span>
+            </center>
+            <p>
+                <span class="material-icons left"> location_on </span>
+                Nombre: <br>
+                <span style="color: #2e7d32;">{{$chofer->nombre}}</span>
+            </p>
+            <p>
+                <span class="material-icons left"> location_on </span>
+                Fecha de nacimiento: <br>
+                <span style="color: #2e7d32;">{{$chofer->fecha_nacimiento}}</span>
+            </p>
+            <p>
+                <span class="material-icons left"> location_on </span>
+                Edad: <br>
+                <span style="color: #2e7d32;">{{$chofer->edad}} años</span>
+            </p>
+            <p>
+                <span class="material-icons left"> location_on </span>
+                Experiencia: <br>
+                <span style="color: #2e7d32;">{{$chofer->experiencia}} años</span>
+            </p>
+            <p>
+                <span class="material-icons left"> location_on </span>
+                Tipo de licencia: <br>
+                <span style="color: #2e7d32;">{{$chofer->tipo_licencia}}</span>
+            </p>
+            <p>
+                <span class="material-icons left"> location_on </span>
+                Vencimiento de licencia: <br>
+                <span style="color: #2e7d32;">{{$chofer->vencimiento_licencia}}</span>
+            </p>
+        </div>
+        <div class="modal-footer">
+            <center><a href="#!" class="btn modal-close waves-effect waves-green">Cerrar</a></center> 
+        </div>
+    </div>
     
 @endsection
 

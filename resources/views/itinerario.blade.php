@@ -165,32 +165,32 @@
                 <span style="color: #2e7d32;">{{$chofer->email}}</span>
             </center>
             <p>
-                <span class="material-icons left"> location_on </span>
+                <span class="material-icons left"> account_circle </span>
                 Nombre: <br>
                 <span style="color: #2e7d32;">{{$chofer->nombre}}</span>
             </p>
             <p>
-                <span class="material-icons left"> location_on </span>
+                <span class="material-icons left"> calendar_month </span>
                 Fecha de nacimiento: <br>
                 <span style="color: #2e7d32;">{{$chofer->fecha_nacimiento}}</span>
             </p>
             <p>
-                <span class="material-icons left"> location_on </span>
+                <span class="material-icons left"> cake </span>
                 Edad: <br>
                 <span style="color: #2e7d32;">{{$chofer->edad}} años</span>
             </p>
             <p>
-                <span class="material-icons left"> location_on </span>
+                <span class="material-icons left"> work </span>
                 Experiencia: <br>
                 <span style="color: #2e7d32;">{{$chofer->experiencia}} años</span>
             </p>
             <p>
-                <span class="material-icons left"> location_on </span>
+                <span class="material-icons left"> note </span>
                 Tipo de licencia: <br>
                 <span style="color: #2e7d32;">{{$chofer->tipo_licencia}}</span>
             </p>
             <p>
-                <span class="material-icons left"> location_on </span>
+                <span class="material-icons left"> calendar_month </span>
                 Vencimiento de licencia: <br>
                 <span style="color: #2e7d32;">{{$chofer->vencimiento_licencia}}</span>
             </p>

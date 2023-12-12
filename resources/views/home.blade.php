@@ -1,6 +1,6 @@
 @extends('plantilla')
 
-@section('title', 'Central de autobuses')
+@section('title', 'Central de autobuses 2')
 
 @section('content')
     <img src="{{asset('imagenes/The World(2).png')}}" class="responsive-img" style="max-width: 100%;" alt="Autobuses">

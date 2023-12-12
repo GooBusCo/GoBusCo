@@ -5,7 +5,7 @@
 @section('content')
 
     <br><br>
-    <form class="row" method="get" action="{{route('buscar')}}">
+    <form class="row" method="get" action="{{URL::secure('/itinerario')}}">
 
         <div class="input-field col s12 m2">
             <select id="origen" name="origen">

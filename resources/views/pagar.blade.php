@@ -30,7 +30,7 @@
         </div>
     </div></center>
 
-    <form class="row container" method="post" action="{{route('pagar')}}"> 
+    <form class="row container" method="post" action="{{URL::secure('/itinerario/cobro')}}"> 
         @csrf
         <input type="hidden" name="salida" id="salida" readonly required>
         <input type="hidden" name="llegada" id="llegada" readonly required>

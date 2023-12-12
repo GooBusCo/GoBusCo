@@ -5,7 +5,7 @@
 @section('content')
     <img src="{{asset('imagenes/The World(2).png')}}" class="responsive-img" style="max-width: 100%;" alt="Autobuses">
     <br>
-    <form id="form_1" class="row" method="get" action="{{route('buscar')}}">
+    <form id="form_1" class="row" method="get" action="{{URL::secure('/itinerario')}}">
 
         <div class="input-field col s12 m2">
             <select id="origen" name="origen">

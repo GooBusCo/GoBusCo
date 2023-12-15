@@ -1,6 +1,6 @@
 @extends('plantilla')
 
-@section('title', 'Central de autobuses 2')
+@section('title', 'Central de autobuses')
 
 @section('content')
     <img src="{{asset('imagenes/The World(2).png')}}" class="responsive-img" style="max-width: 100%;" alt="Autobuses">
@@ -23,7 +23,7 @@
         </div>
         <div class="col s0"><input type="hidden" name="ninos" id="ninos" value="0"></div>
         <div class="col s0"><input type="hidden" name="adultos" id="adultos" value="1"></div>
-        <ul class="collapsible col s12 m3">
+        <ul class="collapsible col s12 m4">
             <li>
                 <div class="collapsible-header"><i class="material-icons">directions_walk</i> <b id="numPasajeros">1 Pasajeros </b></div>
                 <div class="collapsible-body row">

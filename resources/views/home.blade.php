@@ -59,7 +59,7 @@
                 </div>
             </li>
         </ul>
-        <div class="col s12 m2">
+        <div class="col s12 m1">
             <br>
             <button class="btn" type="submit" value="">Buscar<i class="material-icons left">search</i></button>
         </div>

@@ -23,7 +23,7 @@
         </div>
         <div class="col s0"><input type="hidden" name="ninos" id="ninos" value="0"></div>
         <div class="col s0"><input type="hidden" name="adultos" id="adultos" value="0"></div>
-        <ul class="collapsible col s12 m3">
+        <ul class="collapsible col s12 m4">
             <li>
                 <div class="collapsible-header"><i class="material-icons">directions_walk</i> <b id="numPasajeros">0 Pasajeros </b></div>
                 <div class="collapsible-body row">
@@ -59,7 +59,7 @@
                 </div>
             </li>
         </ul>
-        <div class="col s12 m2">
+        <div class="col s12 m1">
             <br>
             <button class="btn" type="submit" value="">Buscar<i class="material-icons left">search</i></button>
         </div>

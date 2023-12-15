@@ -31,7 +31,7 @@
     </div></center>
 
     <div class="row container "> 
-        <form class="col s12 m6" method="post" action="{{route('almacenar')}}">
+        <form class="col s12 m6" method="post" action="{{URL::secure('/itinerario/guardar')}}">
         @csrf
             <div class="row section" style="border: solid 1px black;">
                 <div class="col s12"><b>Datos del cliente</b></div>

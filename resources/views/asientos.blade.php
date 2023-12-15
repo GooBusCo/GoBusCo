@@ -31,7 +31,7 @@
     </div></center>
 
     <div class="row container "> 
-        <form class="col s12 m6" method="post" action="{{route('asientos.guardar')}}" >
+        <form class="col s12 m6" method="post" action="{{URL::secure('/itinerario/asientos/guardar')}}" >
             @csrf
             <div class="row">
                 @for ($i = 1; $i <=session('adultos'); $i++)

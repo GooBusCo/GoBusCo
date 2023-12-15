@@ -5,7 +5,7 @@
 @section('content')
 
     <br><br>
-    <form class="row" method="get" action="{{route('buscar')}}">
+    <form class="row" method="get" action="{{URL::secure('/itinerario')}}">
 
         <div class="input-field col s12 m2">
             <select id="origen" name="origen">
@@ -23,7 +23,7 @@
         </div>
         <div class="col s0"><input type="hidden" name="ninos" id="ninos" value="0"></div>
         <div class="col s0"><input type="hidden" name="adultos" id="adultos" value="0"></div>
-        <ul class="collapsible col s12 m3">
+        <ul class="collapsible col s12 m4">
             <li>
                 <div class="collapsible-header"><i class="material-icons">directions_walk</i> <b id="numPasajeros">0 Pasajeros </b></div>
                 <div class="collapsible-body row">
@@ -59,7 +59,7 @@
                 </div>
             </li>
         </ul>
-        <div class="col s12 m2">
+        <div class="col s12 m1">
             <br>
             <button class="btn" type="submit" value="">Buscar<i class="material-icons left">search</i></button>
         </div>
@@ -156,6 +156,49 @@
     </div>
 
     <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <center>
+                <h4>Informacion del chofer</h4>
+                <img src="{{asset('imagenes/chofer.png')}}" class="reponsive-img" style="max-height: 100px;"> <br>
+                <h6>{{$chofer->nombre}}</h6>
+                <span style="color: #2e7d32;">{{$chofer->email}}</span>
+            </center>
+            <p>
+                <span class="material-icons left"> account_circle </span>
+                Nombre: <br>
+                <span style="color: #2e7d32;">{{$chofer->nombre}}</span>
+            </p>
+            <p>
+                <span class="material-icons left"> calendar_month </span>
+                Fecha de nacimiento: <br>
+                <span style="color: #2e7d32;">{{$chofer->fecha_nacimiento}}</span>
+            </p>
+            <p>
+                <span class="material-icons left"> cake </span>
+                Edad: <br>
+                <span style="color: #2e7d32;">{{$chofer->edad}} años</span>
+            </p>
+            <p>
+                <span class="material-icons left"> work </span>
+                Experiencia: <br>
+                <span style="color: #2e7d32;">{{$chofer->experiencia}} años</span>
+            </p>
+            <p>
+                <span class="material-icons left"> note </span>
+                Tipo de licencia: <br>
+                <span style="color: #2e7d32;">{{$chofer->tipo_licencia}}</span>
+            </p>
+            <p>
+                <span class="material-icons left"> calendar_month </span>
+                Vencimiento de licencia: <br>
+                <span style="color: #2e7d32;">{{$chofer->vencimiento_licencia}}</span>
+            </p>
+        </div>
+        <div class="modal-footer">
+            <center><a href="#!" class="btn modal-close waves-effect waves-green">Cerrar</a></center> 
+        </div>
+    </div>
     
 @endsection
 

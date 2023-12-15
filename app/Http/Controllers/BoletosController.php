@@ -11,7 +11,7 @@ class BoletosController extends Controller
 {
     //
 
-    public function bus2(Request $request){
+    public function buscar(Request $request){
         session(['origen' => $request->origen]);
         session(['destino' => $request->destino]);
         session(['fecha' => $request->fecha]);

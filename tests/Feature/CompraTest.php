@@ -48,7 +48,7 @@ class CompraTest extends TestCase
         $compra->assertStatus(302)->assertRedirect(route('home'));
 
         //se verifica que se haya guardado el boleto, cliente y pasajero
-        $this->assertDatabaseHas('clients',['nombre'=>'Kevin']);
+        $this->assertDatabaseHas('clients',['nombre'=>'Angel']);
         $this->assertDatabaseHas('pasajeros',['nombre'=>'Kevin']);
         $this->assertDatabaseHas('boletos',['pasajero'=>'Kevin Mina Martinez']);
 

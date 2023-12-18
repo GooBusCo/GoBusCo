@@ -79,7 +79,7 @@ class BoletosController extends Controller
         return redirect(route('pagar.view'));
     }
 
-    public function pagar4(Request $request){
+    public function pagar(Request $request){
         //crear y guardar cliente
         $cliente = new Client();
         $cliente->nombre = $request->nombre;

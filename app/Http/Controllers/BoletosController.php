@@ -90,7 +90,7 @@ class BoletosController extends Controller
         $cliente->estado = $request->estado;
         $cliente->ciudad = $request->ciudad;
         $cliente->email = $request->correo;
-        $cliente->telefono = $request->telefono;
+        $cliente->telefono = $request->telefono2;
         $cliente->save();
 
         $numPasajeros = session('num_pasajeros');

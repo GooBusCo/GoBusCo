@@ -12,6 +12,14 @@ class BoletosController extends Controller
     //
 
     public function buscar(Request $request){
+        $request->validate([
+            'origen' => ['required','string'],
+            'destino' => ['required','string'],
+            'fecha' => ['required','string'],
+            'adultos' => ['required','numeric','min:1'],
+            'ninos' => ['required','numeric'],
+        ]);
+
         session(['origen' => $request->origen]);
         session(['destino' => $request->destino]);
         session(['fecha' => $request->fecha]);
